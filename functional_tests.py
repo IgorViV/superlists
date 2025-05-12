@@ -1,19 +1,20 @@
 import unittest
 from selenium import webdriver
 
+
 class NewVisitorTest(unittest.TestCase):
-    '''тест нового посетителя'''
+    """тест нового посетителя"""
 
     def setUp(self) -> None:
-        '''установка'''
+        """установка"""
         self.browser = webdriver.Firefox()
 
     def tearDown(self) -> None:
-        '''демонтаж'''
+        """демонтаж"""
         self.browser.quit()
 
     def test_can_start_a_list_and_retrieve_it_later(self):
-        '''тест: можно начать список и получить его позже'''
+        """тест: можно начать список и получить его позже"""
         # Солнышко слышала про крутое новое онлайн-приложение со списком
         # неотложных дел. Она решила оценить его домашнюю страницу
         self.browser.get('http://localhost:8000')
@@ -40,13 +41,10 @@ class NewVisitorTest(unittest.TestCase):
         # сайт сгенерировал для нее уникальный URL-адрес - об этом
         # выводится небольшой текст с объяснениями.
 
-        # Она посещает этот URLадрес - ее список по-прежнему там.
+        # Она посещает этот URL-адрес - ее список по-прежнему там.
 
         # Удовлетворенная, она снова ложится спать
 
+
 if __name__ == '__main__':
     unittest.main(warnings='ignore')
-
-
-
-
