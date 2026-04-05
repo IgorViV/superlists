@@ -1,0 +1,21 @@
+# Byte-compiled / optimized / DLL files
+.DS_Store
+__pycache__/
+*.py[codz]
+*$py.class
+*.egg-info
+
+# PyCharm
+.idea/
+
+# Visual Studio Code
+.vscode/
+
+# Environments
+venv/
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
